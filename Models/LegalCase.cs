@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
+
 namespace lawyer_management_system.Models
 {
     public class LegalCase
@@ -9,6 +11,7 @@ namespace lawyer_management_system.Models
         public DateTime  RenewalDate { get; set; }
         public bool ReminderSent { get; set; }
         public int ClientId { get; set; }
+        [JsonIgnore]
         public Client? Client { get; set; }
     }
 }
