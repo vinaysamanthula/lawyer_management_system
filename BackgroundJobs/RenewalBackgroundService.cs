@@ -32,6 +32,7 @@ namespace lawyer_management_system.BackgroundJobs
 
                 foreach (var item in cases)
                 {
+                   Console.WriteLine("🔁 Checking renewals...");
                     // 🔔 Simulate reminder
                     Console.WriteLine($"Reminder: {item.Title} for Client {item.ClientId}");
 
